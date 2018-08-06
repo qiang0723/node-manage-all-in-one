@@ -107,7 +107,7 @@ function networkUp () {
   echo "###############################################################"
   echo "############### Have Org3 peers join network ##################"
   echo "###############################################################"
-  docker exec node-add_Org3cli_1 ./add-scripts/step2org3.sh $CHANNEL_NAME $CLI_DELAY $LANGUAGE $CLI_TIMEOUT
+  docker exec featuretestbft_cli.org1.example.com_1 ./add-scripts/step2org3.sh $CHANNEL_NAME $CLI_DELAY $LANGUAGE $CLI_TIMEOUT
   if [ $? -ne 0 ]; then
     echo "ERROR !!!! Unable to have Org3 peers join network"
     exit 1

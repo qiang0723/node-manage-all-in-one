@@ -157,7 +157,7 @@ function createConfigTx () {
   echo "###############################################################"
   echo "####### Generate and submit config tx to add Org3 #############"
   echo "###############################################################"
-  docker exec mulhost-zig_cli_1 scripts/step1org3.sh $CHANNEL_NAME $CLI_DELAY $LANGUAGE $CLI_TIMEOUT
+  docker exec featuretestbft_cli.org1.example.com_1 add-scripts/step1org3.sh $CHANNEL_NAME $CLI_DELAY $LANGUAGE $CLI_TIMEOUT
   if [ $? -ne 0 ]; then
     echo "ERROR !!!! Unable to create config tx"
     exit 1
